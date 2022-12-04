@@ -43,8 +43,6 @@ const Quotes = () => {
     }
   }, [quotes]);
 
-  console.log(quotes);
-
   return (
     <Container>
       <Button
@@ -66,8 +64,8 @@ const Quotes = () => {
           </TableHead>
           <TableBody>
             {quotes.map((item, i) => (
-              <React.Fragment>
-                <TableRow key={i}>
+              <React.Fragment key={i}>
+                <TableRow>
                   <TableCell>{item._id}</TableCell>
                   <TableCell>{item.content}</TableCell>
                   <TableCell>{item.author}</TableCell>
