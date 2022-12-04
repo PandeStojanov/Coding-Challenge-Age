@@ -49,6 +49,7 @@ const Quotes = () => {
         variant="contained"
         fullWidth
         onClick={() => history.push("/random-quote")}
+        sx={{ mt: 3 }}
       >
         Get random quote
       </Button>
